@@ -9,5 +9,4 @@ for i in dbutils.fs.ls(source_path):
   #display(df)
   df.write.mode("overwrite").parquet(f'{destination}/{i.name[0:len(i.name)-4:1]}.parquet')
 
-# COMMAND ----------
 
